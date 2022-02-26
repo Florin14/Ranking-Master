@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rankingmaster.controller.EditResultController">
+    <children>
+        <Label alignment="CENTER" layoutX="217.0" layoutY="41.0" text="Edit the result!" textFill="NAVY">
+            <font>
+                <Font name="Verdana Bold" size="21.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="14.0" layoutY="14.0">
+            <image>
+                <Image url="@../images/logo.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="editButton" layoutX="289.0" layoutY="293.0" mnemonicParsing="false" onAction="#handle" prefHeight="40.0" prefWidth="45.0" stylesheets="@../css/style.css" text="+" textFill="WHITE">
+            <font>
+                <Font name="Verdana Bold" size="14.0" />
+            </font>
+        </Button>
+        <Line endX="86.79998779296875" endY="-1.52587890625E-5" layoutX="498.0" layoutY="102.0" startX="-472.0" startY="-1.52587890625E-5" stroke="#7bdff2" />
+      <Label fx:id="homeTeamLabel" layoutX="43.0" layoutY="181.0" prefHeight="18.0" prefWidth="200.0" textFill="NAVY">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="awayTeamLabel" layoutX="399.0" layoutY="181.0" prefHeight="18.0" prefWidth="190.0" textFill="NAVY">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="homeTeamResultTextField" layoutX="246.0" layoutY="177.0" prefHeight="26.0" prefWidth="42.0" />
+      <Label alignment="CENTER" layoutX="300.0" layoutY="167.0" prefHeight="30.0" prefWidth="22.0" text="-" textFill="NAVY">
+         <font>
+            <Font name="Verdana Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="awayTeamResultTextField" layoutX="335.0" layoutY="177.0" prefHeight="26.0" prefWidth="42.0" />
+    </children>
+
+</AnchorPane>
